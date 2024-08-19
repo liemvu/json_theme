@@ -520,6 +520,10 @@ void main() {
       ThemeEncoder.encodeAutovalidateMode(AutovalidateMode.onUserInteraction),
       'onUserInteraction',
     );
+    expect(
+      ThemeEncoder.encodeAutovalidateMode(AutovalidateMode.onUnfocus),
+      'onUnfocus',
+    );
   });
 
   test('Axis', () {
@@ -10204,7 +10208,6 @@ void main() {
       bottomSheetTheme: const BottomSheetThemeData(
         backgroundColor: Color(0xff000000),
       ),
-      buttonBarTheme: const ButtonBarThemeData(buttonHeight: 3.0),
       buttonTheme: const ButtonThemeData(buttonColor: Color(0xffbbbbbb)),
       canvasColor: const Color(0xffcccccc),
       cardColor: const Color(0xffdddddd),
